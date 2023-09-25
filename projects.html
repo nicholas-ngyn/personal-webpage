@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="menu">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="/resume.html">RESUME</a>
+            </li>
+            <li>
+                <a href="/projects.html">PROJECTS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <div class="projects">
+        <h1>Projects</h1>
+        <div class="projects_wrapper">
+            <div class="projects_card">
+                <h2>Personal Website</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+            <div class="projects_card">
+                <h2>Game</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+            <div class="projects_card">
+                <h2>App</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+            <div class="projects_card">
+                <h2>Tool</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas' Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="menu">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="/resume.html">RESUME</a>
+            </li>
+            <li>
+                <a href="/projects.html">PROJECTS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <div class="home">
+        <div class="box">
+            <img src="https://www.seekpng.com/png/small/966-9665493_my-profile-icon-blank-profile-image-circle.png" alt="" class="box-img">
+            <h1>Nicholas Nguyen</h1>
+            <h5>Computer Science Undergraduate @UCSD</h5>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nicholas-nguyen-24916a285/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9Hl3JS8ARa%2BBYNMRbD1ONg%3D%3D"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/nicholas-ngyn"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>    
+    </div>
+
+    
+    <footer>
+        © 2023 Nicholas Nguyen. All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

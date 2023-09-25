@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="menu">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="/resume.html">RESUME</a>
+            </li>
+            <li>
+                <a href="/projects.html">PROJECTS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <div class="about">
+        <h3>About</h3>
+        <h1>LET ME INTRODUCE MYSELF.</h1>
+        <p>
+            Highly motivated UCSD undergraduate student looking for real-world experiences. 
+            Very responsible and committedto task completion while actively pursuing personal and professional growth. Eager to apply the knowledge and skills gained from UCSD education to contribute meaningfully in a professional setting.
+        </p>
+    </div>
+    <div class="profile">
+        <div class="profile_title">
+            <h1>Profile</h1>
+            <p>
+                FULLNAME:
+            </p>
+            <p class="profile_info">
+                Nicholas Nguyen
+            </p>
+            <p>
+                BIRTH DATE:
+            </p>
+            <p class="profile_info">
+                May 3, 2004
+            </p>
+            <p>
+                PLACE OF BIRTH:
+            </p>
+            <p class="profile_info">
+                San Diego, California
+            </p>
+            <p>
+                EMAIL:
+            </p>
+            <p class="profile_info">
+                nicholas.ngyn@gmail.com
+            </p>
+        </div>
+        <div class="skill">
+            <h1>SKILLS</h1>
+            <li><h3>PYTHON</h3>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            <li><h3>JAVA</h3>
+                <span class="bar"><span class="java"></span></span>
+            </li>
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <span class="bar"><span class="javascript"></span></span>
+            </li>
+        </div>
+    </div>
+
+    <footer>
+        Edit by Nicholas Nguyen © Copyright 2023
+    </footer>
+    
+</body>
+</html>
