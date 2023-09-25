@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/57c891d41b631b297aa4aa10/1634324143608-9HCUM6OTEX1ZZSRD0AZZ/night-sky-stars.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    background: black;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+    color: white;
+}
+
+nav ul li a {
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+	font-weight: bold;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+	background: lightgray;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.home {
+    width: 100%;
+    height: 650px;
+}
+
+
+
+.box {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding:  40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 13%;
+    color: white;
+}
+
+.box-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.box h5 {
+    padding-top: 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box ul {
+    margin: 0;
+    padding: 20px 0 0 0;   
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+    color: #b9b9b9;
+}
+
+
+
+.about {
+    background: black;
+    width: 100%;
+    height: 260px;
+}
+
+.about h3 {
+    color: orange;
+    text-align: center;
+    padding: 70px 0 20px 0;
+}
+
+.about h1 {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about p {
+    color: darkgray;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.profile {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_title {
+    margin-left: 30%;
+    height: 500px;
+}
+
+.profile .profile_title h1 {
+    padding-bottom: 20px;
+}
+
+.profile p {
+    padding: 15px 0px 5px 0px;
+    color: darkgray;
+}
+
+.profile .profile_info {
+    color: white;
+    padding-top: 0px;
+}
+
+.skill {
+    width: 500px;
+    margin: 60px auto;
+    margin-right: 18%;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
+.skill h1 {
+    text-align: center;
+}
+
+.skill h3 {
+    margin: 5px;
+}
+
+
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    background: gray;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 12px rgba(255, 255, 255, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.12), 0 10px 10px rgba(255, 255, 255, 0.24);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252,103,103,1)100%);
+}
+
+.python {
+    width: 70%;
+    animation: python 3s;
+}
+
+.java {
+    width: 80%;
+    animation: java 3s;
+}
+
+.html {
+    width: 60%;
+    animation: html 3s;
+}
+
+.css {
+    width: 50%;
+    animation: css 3s;
+}
+
+.javascript {
+    width: 20%;
+    animation: javascript 3s;
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+
+/* Projects Section */
+.projects {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.projects h1 {
+    background-color: orange;
+    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.projects_card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    transition: 0.3s ease-in;
+}
+
+/*Change it to project image*/
+.projects_card:nth-child(1) {
+    background-image: url("https://lh3.googleusercontent.com/vdKbcWCGwxtvvoZG5LK-rQcix_6mXl7Z2zzVil3ggiZ6hUETgtSVdbw0hrNAbRoCTCuSt_yn4EJrBS5XzILlYBxGIhMuikJ9nVt1HVA5nI76zA5ludsdTQF9t-ANf4lZPV7Wli9JzTrA8fj1wa5YAgcza7EK1Y8uqcj92Hjm1jaJJ10OJAkdaQg6oB7lKQ");
+}
+
+
+.projects_card h2 {
+    text-align: center;
+}
+
+.projects_card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.projects_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.projects_card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.projects_card button:hover {
+    cursor: pointer;
+}
+
+/*Allows projects to expand out when hovered*/
+.projects_card:hover {
+    transform: scale(1.25);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+/*Adjusts the projects to fit within certain screen sizes*/
+@media screen and (max-width: 1300px) {
+    .projects_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects_wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+/*End of Projects Section* /
+
+
+
+
+footer {
+	clear: both;
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	white-space: nowrap;
+    color: white;
+    padding: 40px 0 40px 0;
+}
