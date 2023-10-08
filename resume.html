@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicholas' Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="test.css">
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">NN</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/index.html" class="navbar_links">HOME</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/about.html" class="navbar_links">ABOUT</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/resume.html" class="navbar_links">RESUME</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/projects.html" class="navbar_links">PROJECTS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+
+
+
+    <div class="home">
+        <div class="box">
+            <img src="https://www.seekpng.com/png/small/966-9665493_my-profile-icon-blank-profile-image-circle.png" alt="" class="box-img">
+            <h1>Nicholas Nguyen</h1>
+            <h5>Computer Science Undergraduate @UCSD</h5>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nicholas-nguyen-24916a285/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9Hl3JS8ARa%2BBYNMRbD1ONg%3D%3D"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/nicholas-ngyn"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>    
+    </div>
+
+    <div class="about">
+        <div class="intro">
+            <h3>About</h3>
+            <h1>LET ME INTRODUCE MYSELF.</h1>
+            <p>
+            Highly motivated UCSD undergraduate student looking for real-world experiences. 
+            Very responsible and committedto task completion while actively pursuing personal and professional growth. Eager to apply the knowledge and skills gained from UCSD education to contribute meaningfully in a professional setting.
+            </p>
+        </div>
+        <div class="profile">
+            <div class="profile_title">
+                <h1>Profile</h1>
+                <p>
+                    FULLNAME:
+                </p>
+                <p class="profile_info">
+                    Nicholas Nguyen
+                </p>
+                <p>
+                    BIRTH DATE:
+                </p>
+                <p class="profile_info">
+                    May 3, 2004
+                </p>
+                <p>
+                    PLACE OF BIRTH:
+                </p>
+                <p class="profile_info">
+                    San Diego, CA
+                </p>
+                <p>
+                    SCHOOL:
+                </p>
+                <p class="profile_info">
+                    University of California, San Diego
+                </p>
+                <p>
+                    EMAIL:
+                </p>
+                <p class="profile_info">
+                    nicholas.ngyn@gmail.com
+                </p>
+            </div>
+            <div class="skill">
+                <h1>SKILLS</h1>
+                <li><h3>PYTHON</h3>
+                    <span class="skill_bar"><span class="python"></span></span>
+                </li>
+                <li><h3>JAVA</h3>
+                    <span class="skill_bar"><span class="java"></span></span>
+                </li>
+                <li><h3>HTML</h3>
+                    <span class="skill_bar"><span class="html"></span></span>
+                </li>
+                <li><h3>CSS</h3>
+                    <span class="skill_bar"><span class="css"></span></span>
+                </li>
+                <li><h3>JAVASCRIPT</h3>
+                    <span class="skill_bar"><span class="javascript"></span></span>
+                </li>
+            </div>
+        </div>
+    </div>
+
     <div class="resume">
         <h1>Resume</h1>
         <div class="timeline">
@@ -19,17 +124,17 @@
                     <p>Highschool Education</p>
                     <span class="left-container-arrow"></span>
                 </div>
-             </div>
-             <div class="container right-container">
+            </div>
+            <div class="container right-container">
                 <img src="ucsd-logo.svg.png">
-                 <div class="text-box">
-                     <h2>University of California, San Diego</h2>
-                     <small>2022-Current</small>
-                     <p>College Education</p>
-                     <span class="right-container-arrow"></span>
-                 </div>
-             </div>
-             <div class="container left-container">
+                <div class="text-box">
+                    <h2>University of California, San Diego</h2>
+                    <small>2022-Current</small>
+                    <p>College Education</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container left-container">
                 <img src="ucsd-logo.svg.png">
                  <div class="text-box">
                      <h2>Computer Science Tutor</h2>
@@ -37,8 +142,34 @@
                      <p>Assisted UCSD students with coding problems.</p>
                      <span class="left-container-arrow"></span>
                  </div>
-             </div>
+            </div>
         </div>
-   </div>
+    </div>
+
+    <div class="projects">
+        <h3>Projects</h3>
+        <div class="projects_wrapper">
+            <div class="projects_card">
+                <h2>Personal Website</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><a href="https://github.com/nicholas-ngyn/personal-webpage"><button>MORE</button></a></div>
+            </div>
+            <div class="projects_card">
+                <h2>Game</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+            <div class="projects_card">
+                <h2>App</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+            <div class="projects_card">
+                <h2>Tool</h2>
+                <p>HTML,CSS,JAVASCRIPT</p>
+                <div class="projects_btn"><button>MORE</button></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

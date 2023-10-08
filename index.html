@@ -11,35 +11,32 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <ul id="menu">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/about.html">ABOUT</a>
-            </li>
-            <li>
-                <a href="/resume.html">RESUME</a>
-            </li>
-            <li>
-                <a href="/projects.html">PROJECTS</a>
-            </li>
-        </ul>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">NN</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">HOME</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/about.html" class="navbar_links">ABOUT</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/resume.html" class="navbar_links">RESUME</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/projects.html" class="navbar_links">PROJECTS</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <script src="app.js"></script>
 
-    <script>
-        var navbar = document.getElementById("navbar");
-        var menu = document.getElementById("menu");
-        window.onscroll = function() {
-            if(window.pageYOffset >= menu.offsetTop) {
-                navbar.classList.add("sticky");
-            }
-            else{
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
 
     <div class="home">
         <div class="box">
@@ -100,19 +97,19 @@
             <div class="skill">
                 <h1>SKILLS</h1>
                 <li><h3>PYTHON</h3>
-                    <span class="bar"><span class="python"></span></span>
+                    <span class="skill_bar"><span class="python"></span></span>
                 </li>
                 <li><h3>JAVA</h3>
-                    <span class="bar"><span class="java"></span></span>
+                    <span class="skill_bar"><span class="java"></span></span>
                 </li>
                 <li><h3>HTML</h3>
-                    <span class="bar"><span class="html"></span></span>
+                    <span class="skill_bar"><span class="html"></span></span>
                 </li>
                 <li><h3>CSS</h3>
-                    <span class="bar"><span class="css"></span></span>
+                    <span class="skill_bar"><span class="css"></span></span>
                 </li>
                 <li><h3>JAVASCRIPT</h3>
-                    <span class="bar"><span class="javascript"></span></span>
+                    <span class="skill_bar"><span class="javascript"></span></span>
                 </li>
             </div>
         </div>
@@ -122,7 +119,7 @@
         <h1>Resume</h1>
         <div class="timeline">
             <div class="container left-container">
-                <img src="phhs-logo.png">
+                <img src="images/phhs-logo.png">
                 <div class="text-box">
                     <h2>Patrick Henry High School</h2>
                     <small>2018-2022</small>
@@ -131,7 +128,7 @@
                 </div>
             </div>
             <div class="container right-container">
-                <img src="ucsd-logo.svg.png">
+                <img src="images/ucsd-logo.svg.png">
                 <div class="text-box">
                     <h2>University of California, San Diego</h2>
                     <small>2022-Current</small>
@@ -140,7 +137,7 @@
                 </div>
             </div>
             <div class="container left-container">
-                <img src="ucsd-logo.svg.png">
+                <img src="images/ucsd-logo.svg.png">
                  <div class="text-box">
                      <h2>Computer Science Tutor</h2>
                      <small>2023-Current</small>
